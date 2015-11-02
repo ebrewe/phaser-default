@@ -1,1 +1,39 @@
-Start
+<!DOCTYPE html>
+<html>
+<head>
+<title>The Game Brewery</title>
+<link rel="stylesheet" type="text/css" href="ed_style.css">
+<style>
+	.container{ width:90%; margin:0 auto;}
+	h1 { font-family: "Press Start 2P", arial, helvetica, sans-serif;}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="row">
+	<div class="small-centered columns small-12">
+		<h1>Phaser</h1>
+		<div id="game"></div>
+	</div>
+</div>
+</div>
+
+<!-- scripts -->
+<script type="text/javascript">
+//press start 2p
+  WebFontConfig = {
+    google: { families: [ 'Press+Start+2P::latin' ] }
+  };
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })(); </script>
+<script src="js/phaser/phaser.min.js"></script>
+<script src ="js/main.js"></script>
+</body>
+</html>
